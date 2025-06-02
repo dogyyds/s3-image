@@ -69,21 +69,37 @@ export async function decode(
     switch (sourceType) {
       case "avif": {
         const { decode } = await import("@jsquash/avif");
-        return await decode(fileBuffer);
+        const result = await decode(fileBuffer);
+        if (result === null) {
+          throw new Error("Failed to decode AVIF image: decode returned null");
+        }
+        return result;
       }
       case "jpeg": {
         const { decode } = await import("@jsquash/jpeg");
-        return await decode(fileBuffer);
+        const result = await decode(fileBuffer);
+        if (result === null) {
+          throw new Error("Failed to decode JPEG image: decode returned null");
+        }
+        return result;
       }
       // case "jxl":
       // return await jxl.decode(fileBuffer);
       case "png": {
         const { decode } = await import("@jsquash/png");
-        return await decode(fileBuffer);
+        const result = await decode(fileBuffer);
+        if (result === null) {
+          throw new Error("Failed to decode PNG image: decode returned null");
+        }
+        return result;
       }
       case "webp": {
         const { decode } = await import("@jsquash/webp");
-        return await decode(fileBuffer);
+        const result = await decode(fileBuffer);
+        if (result === null) {
+          throw new Error("Failed to decode WebP image: decode returned null");
+        }
+        return result;
       }
       default:
         throw new Error(`Unsupported source type: ${sourceMime}`);
