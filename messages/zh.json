@@ -1,0 +1,179 @@
+{
+  "navbar": {
+    "gallery": "画廊",
+    "settings": "设置",
+    "upload": "上传"
+  },
+  "index": {
+    "slogan": "<normal>您在 S3 中的<br></br>图片管家</normal>",
+    "description": "轻松上传、查看和删除 S3 中的图片",
+    "compatibility": "同时兼容多种 S3 兼容服务",
+    "getStarted": "开始使用",
+    "readDocs": "阅读文档",
+    "viewSource": "查看源码",
+    "noLongerShow": "不再显示此页面"
+  },
+  "settings": {
+    "title": "设置",
+    "profilesName": "配置",
+    "s3": "S3",
+    "upload": "上传",
+    "keyTemplate": {
+      "title": "键（名称）模板",
+      "description": "上传到 S3 时的命名模板。使用 '{{filename'}} 插入原始文件名。",
+      "endWithExtWarning": "建议以 \".'{{ext'}}\" 结尾。",
+      "deprecatedPlaceholderWarning": "占位符{placeholder}已被弃用，请使用{instead}替代"
+    },
+    "imageCompress": {
+      "enable": "启用图像转换和压缩",
+      "targetFormat": "目标格式",
+      "selectFormat": "选择格式",
+      "quality": "质量：{quality}"
+    },
+    "s3Settings": {
+      "title": "S3",
+      "endpoint": "端点",
+      "endpointDesc": "S3 端点",
+      "bucket": "存储桶名称",
+      "bucketDesc": "S3 存储桶名称",
+      "region": "区域",
+      "regionDesc": "S3 区域",
+      "accessKey": "Access Key",
+      "accessKeyDesc": "Access Key ID",
+      "secretKey": "Secret Key",
+      "secretKeyDesc": "Secret Access Key",
+      "pathStyle": "使用路径形式 API",
+      "pathStyleDesc": "强制使用已经被废弃的<more>路径形式 API</more>。",
+      "publicUrl": "公共 URL",
+      "publicUrlDesc": "公共存储桶的访问URL。<mono>public-url/object-path</mono>应该能够访问存储桶中的对象。\n在<more>文档</more>中了解更多。",
+      "validateBtn": "验证 S3 设置",
+      "validSuccess": "S3 设置有效",
+      "validError": "{error}"
+    },
+    "profiles": {
+      "title": "配置",
+      "current": "当前",
+      "rename": "重命名",
+      "duplicate": "复制",
+      "load": "加载",
+      "delete": "删除",
+      "update": "更新",
+      "export": "导出",
+      "importProfile": "导入配置",
+      "importOptions": "导入选项",
+      "importFromClipboard": "从剪贴板导入",
+      "importFromFile": "从文件导入",
+      "clipboardEmpty": "剪贴板为空。",
+      "failedToReadClipboard": "无法从剪贴板读取。",
+      "failedToReadFile": "无法读取文件。",
+      "errors": {
+        "sameNameError": "新名称与旧名称相同",
+        "nameExists": "配置名称已存在",
+        "loadFailed": "加载配置失败，请重试。",
+        "loadSuccess": "配置 \"{name}\" 已成功加载。",
+        "duplicateSuccess": "配置 \"{name}\" 已复制为 \"{newName}\"。",
+        "duplicateFailed": "复制配置失败。",
+        "profileNotFound": "未找到要删除的配置。",
+        "cannotDeleteCurrent": "无法删除当前活动的配置。",
+        "deleteSuccess": "配置 \"{nameToDelete}\" 已删除。",
+        "invalidFormat": "配置格式无效。缺少名称或数据。",
+        "nameExistsImport": "名为 \"{name}\" 的配置已存在。",
+        "importSuccess": "配置 \"{name}\" 已成功导入。",
+        "parseFailed": "解析配置 JSON 失败。请检查格式。",
+        "validationFailed": "数据验证失败：{error}"
+      }
+    },
+    "s3Invalid": {
+      "s3ConfigTitle": "S3 配置不正确",
+      "s3ConfigDesc": "S3 配置不正确或未配置，请在设置页面中检查。",
+      "editLink": "编辑设置"
+    },
+    "gallery": {
+      "title": "画廊",
+      "autoRefresh": "自动刷新",
+      "autoRefreshDesc": "当有新照片上传时自动刷新画廊。"
+    }
+  },
+  "gallery": {
+    "control": {
+      "s3SettingsNotFound": "未找到 S3 设置",
+      "requestingDelete": "正在请求删除...",
+      "deleteSuccess": "已删除照片",
+      "deleteFailed": "删除照片失败"
+    },
+    "store": {
+      "s3SettingsNotFound": "未找到 S3 设置",
+      "failedToFetchPhotos": "获取照片失败",
+      "fetchedPhotos": "已获取照片"
+    },
+    "grid": {
+      "noPhotosFound": "未找到照片",
+      "loadPhotos": "加载照片"
+    },
+    "display": {
+      "search": "搜索..."
+    },
+    "filter": {
+      "filterOptions": "过滤选项",
+      "filterByProperty": "根据属性筛选图片。",
+      "filterByPrefix": "按前缀过滤",
+      "directoryTree": "像在目录树中一样查找图像。",
+      "filterByDate": "按日期过滤",
+      "clickToOpenCalendar": "点击以打开日历选择日期范围。",
+      "selectPrefix": "选择前缀...",
+      "noPrefix": "(无前缀)",
+      "searchPrefix": "搜索前缀...",
+      "noPrefixFound": "未找到前缀。"
+    },
+    "sort": {
+      "sortOptions": "排序选项",
+      "sortActiveMessage": "搜索已激活，排序选项已禁用。图片将按搜索匹配度排序。",
+      "sortInactiveMessage": "选择图片的排序方式。",
+      "sortBy": "按 ... 排序",
+      "sortProperty": "排序所依据的属性。",
+      "selectProperty": "选择属性",
+      "date": "日期",
+      "name": "名称 (路径)",
+      "sortOrder": "升降序",
+      "sortOrderDesc": "以升序或降序显示结果。",
+      "sortOrderToggle": "排序顺序切换"
+    },
+    "date": {
+      "all": "所有",
+      "reset": "全部（重置）",
+      "recent": "最近",
+      "days": "天",
+      "months": "个月",
+      "years": "年",
+      "selectDate": "选择日期"
+    }
+  },
+  "theme": {
+    "toggleTheme": "切换主题"
+  },
+  "upload": {
+    "dropzone": {
+      "title": "拖放文件到这里",
+      "description": "或点击浏览",
+      "browseFiles": "浏览文件"
+    },
+    "fileList": {
+      "title": "待上传文件",
+      "clearUploaded": "清除已上传条目",
+      "uploadAll": "全部上传",
+      "process": "处理",
+      "edit": "编辑",
+      "remove": "移除",
+      "copy": "复制链接",
+      "urlCopied": "链接已复制到剪贴板",
+      "compressed": "已压缩",
+      "recompress": "重新压缩",
+      "compressing": "压缩中...",
+      "copyFailed": "复制键失败",
+      "keyWillBe": "名称将会是："
+    },
+    "alerts": {
+      "s3NotConfigured": "S3 设置未配置"
+    }
+  }
+}

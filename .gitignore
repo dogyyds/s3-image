@@ -1,0 +1,64 @@
+# 依赖
+node_modules
+.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# 测试
+coverage
+
+# Next.js
+.next/
+out/
+build
+dist
+
+# 生产环境
+/apps/web/.next/
+/apps/web/out/
+/apps/web/build
+/apps/web/dist
+
+# 调试
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 环境变量
+.env
+.env*.local
+.env.development
+.env.test
+.env.production
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# 编辑器
+.idea
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# 构建分析
+.analyze
+
+# 日志
+logs
+*.log
+
+# 临时文件
+tmp
+temp

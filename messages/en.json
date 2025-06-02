@@ -1,0 +1,179 @@
+{
+  "navbar": {
+    "upload": "Upload",
+    "gallery": "Gallery",
+    "settings": "Settings"
+  },
+  "index": {
+    "slogan": "<normal>Your</normal> Ultimate<br></br><normal>Manager of Images in S3 Buckets</normal>",
+    "description": "Upload, view and delete images in your S3 bucket with ease",
+    "compatibility": "Also works with lots of S3-compatible services",
+    "getStarted": "Get Started",
+    "readDocs": "Read Docs",
+    "viewSource": "View Source",
+    "noLongerShow": "Don't show this page again"
+  },
+  "settings": {
+    "title": "Settings",
+    "profilesName": "Profiles",
+    "s3": "S3",
+    "upload": "Upload",
+    "keyTemplate": {
+      "title": "Key Template",
+      "description": "Template for the S3 key. Use '{{filename'}} to insert the original filename.",
+      "endWithExtWarning": "End with \".'{{ext'}}\" is generally recommended.",
+      "deprecatedPlaceholderWarning": "placeholder {placeholder} has been deprecated, use {instead} instead"
+    },
+    "imageCompress": {
+      "enable": "Enable Image Convert & Compression",
+      "targetFormat": "Target Format",
+      "selectFormat": "Select format",
+      "quality": "Quality: {quality}"
+    },
+    "s3Settings": {
+      "title": "S3",
+      "endpoint": "Endpoint",
+      "endpointDesc": "S3 endpoint",
+      "bucket": "Bucket Name",
+      "bucketDesc": "S3 bucket name",
+      "region": "Region",
+      "regionDesc": "S3 region",
+      "accessKey": "Access Key",
+      "accessKeyDesc": "S3 access key",
+      "secretKey": "Secret Key",
+      "secretKeyDesc": "S3 secret key",
+      "pathStyle": "Use Path Style API",
+      "pathStyleDesc": "Force using the deprecated <more>path style API</more>.",
+      "publicUrl": "Public URL",
+      "publicUrlDesc": "The access url for the public bucket. <mono>public-url/object-path</mono> should be able to access the object in bucket. Learn more at <more>docs</more>.",
+      "validateBtn": "Validate S3 Settings",
+      "validSuccess": "✓ S3 settings are valid",
+      "validError": "⚠ {error}"
+    },
+    "profiles": {
+      "title": "Profiles",
+      "current": "Current",
+      "rename": "Rename",
+      "duplicate": "Duplicate",
+      "load": "Load",
+      "delete": "Delete",
+      "update": "Update",
+      "export": "Export",
+      "importProfile": "Import Profile",
+      "importOptions": "Import Options",
+      "importFromClipboard": "Import from Clipboard",
+      "importFromFile": "Import from File",
+      "clipboardEmpty": "Clipboard is empty.",
+      "failedToReadClipboard": "Failed to read from clipboard.",
+      "failedToReadFile": "Failed to read file.",
+      "errors": {
+        "sameNameError": "New name is the same as the old name",
+        "nameExists": "Profile name already exists",
+        "loadFailed": "Failed to load profile. Please try again.",
+        "loadSuccess": "Profile \"{name}\" loaded successfully.",
+        "duplicateSuccess": "Profile \"{name}\" duplicated as \"{newName}\".",
+        "duplicateFailed": "Failed to duplicate profile.",
+        "profileNotFound": "Profile not found for deletion.",
+        "cannotDeleteCurrent": "Cannot delete the currently active profile.",
+        "deleteSuccess": "Profile \"{nameToDelete}\" deleted.",
+        "invalidFormat": "Invalid profile format. Missing name or data.",
+        "nameExistsImport": "Profile with name \"{name}\" already exists.",
+        "importSuccess": "Profile \"{name}\" imported successfully.",
+        "parseFailed": "Failed to parse profile JSON. Please check the format.",
+        "validationFailed": "Data validation failed: {error}"
+      }
+    },
+    "s3Invalid": {
+      "s3ConfigTitle": "S3 incorrectly configured",
+      "s3ConfigDesc": "S3 settings are not valid or not configured, please check in the settings page.",
+      "editLink": "Edit Settings"
+    },
+    "gallery": {
+      "title": "Gallery",
+      "autoRefresh": "Auto Refresh",
+      "autoRefreshDesc": "Auto refresh the gallery when a new photo is uploaded."
+    }
+  },
+  "gallery": {
+    "control": {
+      "s3SettingsNotFound": "S3 settings not found",
+      "requestingDelete": "Requested delete...",
+      "deleteSuccess": "Deleted photos",
+      "deleteFailed": "Failed to delete photos"
+    },
+    "store": {
+      "s3SettingsNotFound": "S3 settings not found",
+      "failedToFetchPhotos": "Failed to fetch photos",
+      "fetchedPhotos": "Fetched photos"
+    },
+    "grid": {
+      "noPhotosFound": "No photos found",
+      "loadPhotos": "Load Photos"
+    },
+    "display": {
+      "search": "Search..."
+    },
+    "filter": {
+      "filterOptions": "Filter Options",
+      "filterByProperty": "Filter photos by property.",
+      "filterByPrefix": "Filter by Prefix",
+      "directoryTree": "Find images like in a directory tree.",
+      "filterByDate": "Filter by Date",
+      "clickToOpenCalendar": "Click to open calendar to select date range.",
+      "selectPrefix": "Select prefix...",
+      "noPrefix": "(no prefix)",
+      "searchPrefix": "Search prefix...",
+      "noPrefixFound": "No prefix found."
+    },
+    "sort": {
+      "sortOptions": "Sort Options",
+      "sortActiveMessage": "Search is active, sort options are disabled. Photos will be sorted by search match.",
+      "sortInactiveMessage": "Choose how to sort the photos.",
+      "sortBy": "Sort by",
+      "sortProperty": "Property to sort by.",
+      "selectProperty": "Select property",
+      "date": "Date",
+      "name": "Name (Path)",
+      "sortOrder": "Sort Order",
+      "sortOrderDesc": "Show results in ascending or descending order.",
+      "sortOrderToggle": "Sort order toggle"
+    },
+    "date": {
+      "all": "All",
+      "reset": "All (Reset)",
+      "recent": "Recent",
+      "days": "days",
+      "months": "months",
+      "years": "years",
+      "selectDate": "Select date"
+    }
+  },
+  "theme": {
+    "toggleTheme": "Toggle theme"
+  },
+  "upload": {
+    "dropzone": {
+      "title": "Drag & Drop files here",
+      "description": "or click to browse",
+      "browseFiles": "Browse Files"
+    },
+    "fileList": {
+      "title": "Files to upload",
+      "clearUploaded": "Clear Uploaded Entry",
+      "uploadAll": "Upload All",
+      "process": "Process",
+      "edit": "Edit",
+      "remove": "Remove",
+      "copy": "Copy URL",
+      "urlCopied": "URL copied to clipboard",
+      "compressed": "Compressed",
+      "recompress": "Recompress",
+      "compressing": "Compressing...",
+      "copyFailed": "Failed to copy key",
+      "keyWillBe": "Key will be:"
+    },
+    "alerts": {
+      "s3NotConfigured": "S3 settings are not configured"
+    }
+  }
+}
